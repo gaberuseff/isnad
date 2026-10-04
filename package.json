@@ -13,9 +13,14 @@
     "@heroui/react": "^3.2.6",
     "@heroui/styles": "^3.2.6",
     "@supabase/supabase-js": "^2.117.2",
+    "@tabler/core": "^1.6.1",
+    "@tabler/icons-react": "^3.48.0",
+    "@tanstack/react-query": "^5.104.1",
+    "@tanstack/react-query-devtools": "^5.104.1",
     "@tanstack/react-router": "^1.170.40",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "react-hook-form": "^7.89.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

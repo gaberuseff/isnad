@@ -1,15 +1,19 @@
-import * as React from "react";
-import {Outlet, createRootRoute} from "@tanstack/react-router";
+import {Outlet, createRootRouteWithContext} from "@tanstack/react-router";
+import type useAuth from "../features/auth/hooks/useAuth";
 
-export const Route = createRootRoute({
+export interface MyRouterContext {
+  user: ReturnType<typeof useAuth>["user"];
+  auth: ReturnType<typeof useAuth>;
+}
+
+export const Route = createRootRouteWithContext<MyRouterContext>()({
   component: RootComponent,
 });
 
 function RootComponent() {
   return (
-    <React.Fragment>
-      <div>Hello "__root"!</div>
+    <div dir="rtl">
       <Outlet />
-    </React.Fragment>
+    </div>
   );
 }
